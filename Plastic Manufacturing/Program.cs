@@ -21,13 +21,10 @@ namespace Plastic_Manufacturing
 
         public static int C { get; private set; }
         
-        // double volume = 0;
 
         static void Main(string[] args)
         {
        
-            //
-
             DisplayWelcomeScreen();
 
             Console.WriteLine();
@@ -35,8 +32,7 @@ namespace Plastic_Manufacturing
             double volume = double.Parse(Console.ReadLine());
 
             DisplayMenuScreen();
-          //  double Volume = 0;
-
+       
             void DisplayMenuScreen()
             {
                 bool quitApplication = false;
@@ -166,8 +162,6 @@ namespace Plastic_Manufacturing
             Console.WriteLine("{0:c}", (Scrap * volume * 1.77 * .037));
 
 
-
-
             DisplayContinuePrompt();
         }
 
@@ -236,6 +230,7 @@ namespace Plastic_Manufacturing
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.39 * .033));
+
             DisplayContinuePrompt();
         }
 
@@ -269,9 +264,7 @@ namespace Plastic_Manufacturing
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.95 * .050));
 
-
-
-
+                       
             DisplayContinuePrompt();
         }
 
@@ -305,7 +298,6 @@ namespace Plastic_Manufacturing
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 2.19 * .043));
-
 
 
             DisplayContinuePrompt();
@@ -412,106 +404,8 @@ namespace Plastic_Manufacturing
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.39 * .000036127));
 
-
             DisplayContinuePrompt();
         }
-
-
-     //
-        /*
-        static void DisplayMenuScreenPrice()
-        {
-            bool quitApplication = false;
-            int menuChoicePrice;
-            do
-            {
-                DisplayScreenHeader("Plastics Menu");
-
-                //
-                // get user menu choice
-                //
-                Console.WriteLine("11) Enter Volume ");
-                Console.WriteLine("12) ABS - Acrylonitrile Butadine Styrene");
-                Console.WriteLine("13) HDPE - High Density Polyethylene");
-                Console.WriteLine("14) LDPE - Low Density Polyethylene");
-                Console.WriteLine("15) Nylon - Polyamide");
-                Console.WriteLine("16) PC - Polycarbonate");
-                Console.WriteLine("17) PC/ABS - Polycarbonate/Acrylonitrile Butadiene Styrene");
-                Console.WriteLine("18) PP - Polypropylene");
-                Console.WriteLine("19) PS - Polystyrene");
-                Console.WriteLine("20) Quit");
-                Console.WriteLine();
-                Console.Write("Enter plastic number for pricing of plastic:");
-                menuChoicePrice = int.Parse(Console.ReadLine());
-
-                //
-                // process user menu choice
-                //
-               switch (menuChoicePrice)
-              {
-                   case 11:
-                        Console.WriteLine("Please enter scrap rate of part: ");
-                        double volume = double.Parse(Console.ReadLine());
-                        break;
-
-                    case 12:
-
-                       // DisplayABSScrapRate();
-                         break;
-
-                    //case 13:
-                       // DisplayHDPEScrapRate();
-                       // break;
-
-                    case 14:
-                        DisplayLDPEScrapRate();
-                        break;
-
-                    case 15:
-                        DisplayNylonPolyamideScrapRate();
-                        break;
-
-                    case 16:
-                        DisplayPCPolycarbonateScrapRate();
-                        //DisplayPC
-                        break;
-
-                    case 17:
-                        DisplayPCABSScrapRate();
-                        break;
-
-                    case 18:
-                        DisplayPPScrapRate();
-                        // DisplayPP
-                        break;
-
-                    case 19:
-                        DisplayPSScrapRate();
-                        //DisplayPS
-                        break;
-
-
-                    case 20:
-                        quitApplication = true;
-                        break;
-
-                    default:
-                        Console.WriteLine();
-                        Console.WriteLine("Please enter a number for the menu choice.");
-                        DisplayContinuePrompt();
-                        break;
-                }
-
-
-            } while (!quitApplication);
-        }
-
-    
-      */
-    
-
-
-
 
 
         /// <summary>
@@ -527,8 +421,7 @@ namespace Plastic_Manufacturing
             Console.ReadKey();
         }
 
-
-
+        
         static void DisplayScreenHeader(string headerText)
         {
             Console.Clear();
