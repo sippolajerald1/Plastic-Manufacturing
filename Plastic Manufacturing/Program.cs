@@ -151,7 +151,8 @@ namespace Plastic_Manufacturing
             Console.WriteLine("{0:c}", (volume * 1.77 * .037));
             Console.WriteLine();
             Console.WriteLine("Enter scrap rate of part: ");
-            double Scrap = double.Parse(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out double Scrap);
+            //double Scrap = double.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.77 * .037));
@@ -189,7 +190,8 @@ namespace Plastic_Manufacturing
             Console.WriteLine("{0:c}", volume * 1.29 * .035);
             Console.WriteLine();
             Console.WriteLine("Enter scrap rate of part: ");
-            double Scrap = double.Parse(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out double Scrap);
+            //double Scrap = double.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.29 * .035));
@@ -221,7 +223,8 @@ namespace Plastic_Manufacturing
             Console.WriteLine("Price: ");
             Console.WriteLine();
             Console.WriteLine("Enter scrap rate of part: ");
-            double Scrap = double.Parse(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out double Scrap);
+            //double Scrap = double.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.39 * .033));
@@ -254,7 +257,8 @@ namespace Plastic_Manufacturing
             Console.WriteLine("{0:c}", (volume * 1.95 * 0.050));
             Console.WriteLine();
             Console.WriteLine("Enter scrap rate of part: ");
-            double Scrap = double.Parse(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out double Scrap);
+            //double Scrap = double.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.95 * .050));
@@ -289,7 +293,8 @@ namespace Plastic_Manufacturing
             Console.WriteLine("{0:c}", (volume * 2.19 * 0.043));
             Console.WriteLine();
             Console.WriteLine("Enter scrap rate of part: ");
-            double Scrap = double.Parse(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out double Scrap);
+            //double Scrap = double.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 2.19 * .043));
@@ -323,7 +328,8 @@ namespace Plastic_Manufacturing
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Enter scrap rate of part: ");
-            double Scrap = double.Parse(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out double Scrap);
+            //double Scrap = double.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.89 * .0397));
@@ -359,7 +365,8 @@ namespace Plastic_Manufacturing
             Console.WriteLine("{0:c}", (volume * 1.10 * .033));
             Console.WriteLine();
             Console.WriteLine("Enter scrap rate of part: ");
-            double Scrap = double.Parse(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out double Scrap);
+            //double Scrap = double.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.10 * .033));
@@ -394,7 +401,8 @@ namespace Plastic_Manufacturing
             Console.WriteLine("{0:c}", (volume * 1.39 * 0.000036127));
             Console.WriteLine();
             Console.WriteLine("Enter scrap rate of part: ");
-            double Scrap = double.Parse(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out double Scrap);
+            //double Scrap = double.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("{0:c}", (Scrap * volume * 1.39 * .000036127));
