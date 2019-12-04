@@ -406,7 +406,7 @@ namespace Plastic_Manufacturing
         }
 
 
-     
+     //
         /*
         static void DisplayMenuScreenPrice()
         {
