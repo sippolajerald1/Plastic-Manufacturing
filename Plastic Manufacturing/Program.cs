@@ -52,7 +52,6 @@ namespace Plastic_Manufacturing
                     Console.WriteLine("6) PC/ABS - Polycarbonate/Acrylonitrile Butadiene Styrene");
                     Console.WriteLine("7) PP - Polypropylene");
                     Console.WriteLine("8) PS - Polystyrene");
-                   // Console.WriteLine("9) Select plastic pricing");
                     Console.WriteLine("0) Quit");
                     Console.WriteLine();
                     Console.Write("Enter plastic number for details of plastic:");
@@ -103,10 +102,6 @@ namespace Plastic_Manufacturing
                             DisplayPS(volume);
                             //DisplayPS
                             break;
-
-                    //   case 9:
-                         //   DisplayMenuScreenPrice();
-                        //    break;
 
                         case 0:
                             quitApplication = true;
