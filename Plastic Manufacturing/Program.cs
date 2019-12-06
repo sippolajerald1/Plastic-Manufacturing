@@ -20,110 +20,118 @@ namespace Plastic_Manufacturing
 
 
         public static int C { get; private set; }
-        
+
 
         static void Main(string[] args)
         {
-       
+
             DisplayWelcomeScreen();
-
             Console.WriteLine();
-            Console.WriteLine("Please enter volume: ");
-            double volume = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter user name: ");
+            string name = (Console.ReadLine());
+            // Console.WriteLine("Please enter password: ");
+            // string password = (Console.ReadLine());
+            // if (password == "InkPen")
 
-            DisplayMenuScreen();
-       
-            void DisplayMenuScreen()
             {
-                bool quitApplication = false;
-                int menuChoice;
-                do
+                Console.WriteLine("");
+                Console.WriteLine("Hello, {0} ", name);
+                Console.WriteLine();
+                Console.WriteLine("Please enter volume: ");
+                double volume = double.Parse(Console.ReadLine());
+
+                DisplayMenuScreen();
+
+                void DisplayMenuScreen()
                 {
-                    DisplayScreenHeader("Plastics Menu");
-
-                    //
-                    // get user menu choice
-                    //
-                    Console.WriteLine("1) ABS - Acrylonitrile Butadine Styrene");
-                    Console.WriteLine("2) HDPE - High Density Polyethylene");
-                    Console.WriteLine("3) LDPE - Low Density Polyethylene");
-                    Console.WriteLine("4) Nylon - Polyamide");
-                    Console.WriteLine("5) PC - Polycarbonate");
-                    Console.WriteLine("6) PC/ABS - Polycarbonate/Acrylonitrile Butadiene Styrene");
-                    Console.WriteLine("7) PP - Polypropylene");
-                    Console.WriteLine("8) PS - Polystyrene");
-                    Console.WriteLine("0) Quit");
-                    Console.WriteLine();
-                    Console.Write("Enter plastic number for details of plastic:");
-                    menuChoice = int.Parse(Console.ReadLine());
-
-                    //
-                    // process user menu choice
-                    //
-                    switch (menuChoice)
+                    bool quitApplication = false;
+                    int menuChoice;
+                    do
                     {
-                        case 1:
+                        DisplayScreenHeader("Plastics Menu");
 
-                            DisplayABS(volume);
-                            // Display ABS
-                            break;
+                        //
+                        // get user menu choice
+                        //
+                        Console.WriteLine("1) ABS - Acrylonitrile Butadine Styrene");
+                        Console.WriteLine("2) HDPE - High Density Polyethylene");
+                        Console.WriteLine("3) LDPE - Low Density Polyethylene");
+                        Console.WriteLine("4) Nylon - Polyamide");
+                        Console.WriteLine("5) PC - Polycarbonate");
+                        Console.WriteLine("6) PC/ABS - Polycarbonate/Acrylonitrile Butadiene Styrene");
+                        Console.WriteLine("7) PP - Polypropylene");
+                        Console.WriteLine("8) PS - Polystyrene");
+                        Console.WriteLine("0) Quit");
+                        Console.WriteLine();
+                        Console.Write("Enter plastic number for details of plastic:");
+                        menuChoice = int.Parse(Console.ReadLine());
 
-                        case 2:
-                            DisplayHDPE(volume);
-                            // DisplayHDPE
-                            break;
+                        //
+                        // process user menu choice
+                        //
+                        switch (menuChoice)
+                        {
+                            case 1:
 
-                        case 3:
-                            DisplayLDPE(volume);
-                            // DisplayLDPE
-                            break;
+                                DisplayABS(volume);
+                                // Display ABS
+                                break;
 
-                        case 4:
-                            DisplayNylonPolyamide(volume);
-                            //DisplayNylon - Polyamide
-                            break;
+                            case 2:
+                                DisplayHDPE(volume);
+                                // DisplayHDPE
+                                break;
 
-                        case 5:
-                            DisplayPCPolycarbonate(volume);
-                            //DisplayPC
-                            break;
+                            case 3:
+                                DisplayLDPE(volume);
+                                // DisplayLDPE
+                                break;
 
-                        case 6:
-                            DisplayPCABS(volume);
-                            // DisplayPCABS
-                            break;
+                            case 4:
+                                DisplayNylonPolyamide(volume);
+                                //DisplayNylon - Polyamide
+                                break;
 
-                        case 7:
-                            DisplayPP(volume);
-                            // DisplayPP
-                            break;
+                            case 5:
+                                DisplayPCPolycarbonate(volume);
+                                //DisplayPC
+                                break;
 
-                        case 8:
-                            DisplayPS(volume);
-                            //DisplayPS
-                            break;
+                            case 6:
+                                DisplayPCABS(volume);
+                                // DisplayPCABS
+                                break;
 
-                        case 0:
-                            quitApplication = true;
-                            break;
+                            case 7:
+                                DisplayPP(volume);
+                                // DisplayPP
+                                break;
 
-                        default:
-                            Console.WriteLine();
-                            Console.WriteLine("Please enter a number for the menu choice.");
-                            DisplayContinuePrompt();
-                            break;
-                    }
+                            case 8:
+                                DisplayPS(volume);
+                                //DisplayPS
+                                break;
 
+                            case 0:
+                                quitApplication = true;
+                                break;
 
-                } while (!quitApplication);
+                            default:
+                                Console.WriteLine();
+                                Console.WriteLine("Please enter a number for the menu choice.");
+                                DisplayContinuePrompt();
+                                break;
+                        }
+
+                    } while (!quitApplication);
+                }
             }
+
         }
 
         // 
         // ABS Display
         //
-
-     
 
         static void DisplayABS(double volume)
         {
@@ -409,6 +417,7 @@ namespace Plastic_Manufacturing
 
             DisplayContinuePrompt();
         }
+
 
 
         /// <summary>
