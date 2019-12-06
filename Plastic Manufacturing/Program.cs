@@ -12,19 +12,16 @@ namespace Plastic_Manufacturing
         // **************************************************
         //
         // Title: Plastics Manufacturing Program
-        // Description: Select plastic and price of part
+        // Application Type: Console
+        // Description: Select plastic type and price of part
         // Author: Jerald Sippola
         // Last Modified: 12/4/29
         //
         // ************************************************** 
-
-
         public static int C { get; private set; }
-
 
         static void Main(string[] args)
         {
-
             DisplayWelcomeScreen();
             Console.WriteLine();
             Console.WriteLine("Please enter user name: ");
