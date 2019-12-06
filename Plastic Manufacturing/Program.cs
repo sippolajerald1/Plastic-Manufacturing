@@ -18,8 +18,8 @@ namespace Plastic_Manufacturing
         // Last Modified: 12/4/29
         //
         // ************************************************** 
-        public static int C { get; private set; }
 
+     
         static void Main(string[] args)
         {
             DisplayWelcomeScreen();
